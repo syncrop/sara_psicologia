@@ -1,0 +1,44 @@
+/* ==========================================================================
+   ARCHIVO DE VARIABLES DE MARCA
+   ==========================================================================
+   Única fuente de verdad para tipografías y colores del sitio.
+   Cambia un valor aquí y se actualiza en toda la web (HTML, Tailwind y CSS).
+
+   Los colores se guardan como "R G B" (tres números separados por espacios,
+   SIN comas ni "rgb()"), en vez de en hexadecimal. Es el formato que exige
+   Tailwind para poder generar clases con opacidad (bg-cream/50, text-ink/80,
+   etc. — ver js/tailwind-config.js, que las envuelve en rgb(var(--x) / N)).
+   Cada línea lleva el hex equivalente en el comentario para poder editarlo
+   a ojo; si cambias un color, convierte el hex a "R G B" (por ejemplo con
+   cualquier selector de color) y pega los tres números aquí.
+   ========================================================================== */
+
+:root {
+  /* ---------- Tipografía ---------- */
+  --font-serif: "Lora", "Georgia", serif;      /* Titulares: cercana y elegante */
+  --font-sans: "Plus Jakarta Sans", "Helvetica Neue", sans-serif; /* Cuerpo de texto */
+
+  /* ---------- Fondos ---------- */
+  --color-cream: 250 248 245;   /* #faf8f5 · Fondo principal */
+  --color-sand: 244 240 234;    /* #f4f0ea · Fondo secundario / secciones alternas */
+  --color-white: 255 255 255;   /* #ffffff */
+
+  /* Tonos cálidos para diferenciar secciones (bg-beige/NN, bg-tan/NN en el HTML) */
+  --color-beige: 226 210 185;   /* #e2d2b9 · Beige cálido */
+  --color-tan: 192 164 130;     /* #c0a482 · Tan / marrón claro */
+
+  /* ---------- Verde salvia (primario / acentos) ---------- */
+  --color-sage-50: 238 241 238;    /* #eef1ee · fondos muy suaves, badges */
+  --color-sage-100: 219 227 220;   /* #dbe3dc · bordes suaves, divisores */
+  --color-sage-light: 168 184 171; /* #a8b8ab · detalles decorativos */
+  --color-sage: 98 122 105;        /* #627a69 · acento principal, enlaces, iconos */
+  --color-sage-dark: 77 97 83;     /* #4d6153 · botones, hover, mejor contraste con blanco */
+
+  /* ---------- Texto (carbón cálido, nunca negro puro) ---------- */
+  --color-ink: 45 41 38;        /* #2d2926 · texto principal */
+  --color-ink-soft: 107 100 93; /* #6b645d · texto secundario / párrafos largos */
+
+  /* ---------- Utilidades ---------- */
+  --color-border: 228 221 210;    /* #e4ddd2 · bordes cálidos suaves */
+  --color-whatsapp: 37 211 102;   /* #25d366 · verde oficial de WhatsApp */
+}
