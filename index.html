@@ -20,8 +20,7 @@
   <meta property="og:image" content="/assets/img/og-cover.jpg" />
   <!-- <meta property="og:url" content="https://tu-dominio.vercel.app" /> -->
 
-  <!-- Favicon: sustituir por el icono real en /assets -->
-  <!-- <link rel="icon" type="image/png" href="/assets/img/favicon.png" /> -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
 
   <!-- Google Fonts: Lora (titulares) + Plus Jakarta Sans (texto) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -58,12 +57,15 @@
     <div
       class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
     >
-      <a href="#inicio" class="flex flex-col leading-tight group">
-        <span class="font-serif text-xl text-ink group-hover:text-sage-dark transition-colors">
-          Sara Murillo
-        </span>
-        <span class="text-[11px] tracking-wide uppercase text-ink-soft">
-          Psicóloga Sanitaria · Nº Col. AN-13306
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <img src="assets/img/logo-sara.png" alt="" class="w-14 h-14 object-contain shrink-0" aria-hidden="true" />
+        <span class="flex flex-col leading-tight">
+          <span class="font-serif text-2xl text-ink group-hover:text-sage-dark transition-colors">
+            Sara Murillo
+          </span>
+          <span class="text-xs tracking-wide uppercase text-ink-soft">
+            Psicóloga Sanitaria
+          </span>
         </span>
       </a>
 
@@ -74,7 +76,7 @@
       >
         <a href="#sobre-mi" class="text-sm text-ink hover:text-sage-dark transition-colors">Sobre mí</a>
         <a href="#servicios" class="text-sm text-ink hover:text-sage-dark transition-colors">Servicios</a>
-        <a href="#metodo" class="text-sm text-ink hover:text-sage-dark transition-colors">Cómo trabajo</a>
+        <a href="#metodo" class="text-sm text-ink hover:text-sage-dark transition-colors">Cómo trabajaremos</a>
         <a href="#contacto" class="text-sm text-ink hover:text-sage-dark transition-colors">Contacto</a>
         <a
           href="#contacto"
@@ -108,7 +110,7 @@
     >
       <a href="#sobre-mi" class="text-base text-ink hover:text-sage-dark">Sobre mí</a>
       <a href="#servicios" class="text-base text-ink hover:text-sage-dark">Servicios</a>
-      <a href="#metodo" class="text-base text-ink hover:text-sage-dark">Cómo trabajo</a>
+      <a href="#metodo" class="text-base text-ink hover:text-sage-dark">Cómo trabajaremos</a>
       <a href="#contacto" class="text-base text-ink hover:text-sage-dark">Contacto</a>
       <a
         href="#contacto"
@@ -149,7 +151,7 @@
               Reservar sesión
             </a>
             <a
-              href="#sobre-mi"
+              href="#metodo"
               class="inline-flex justify-center items-center rounded-full border border-sage-dark text-sage-dark font-medium px-7 py-3.5 hover:bg-sage-50 transition-colors"
             >
               Conoce mi enfoque
@@ -157,41 +159,35 @@
           </div>
         </div>
 
-        <!-- Placeholder de fotografía vertical -->
+        <!-- Fotografía del hero -->
         <div class="relative" data-reveal>
           <div
             class="absolute -inset-4 rounded-[2.5rem] bg-sage/15 blur-2xl -z-10"
             aria-hidden="true"
           ></div>
-          <!--
-            Reemplazar el contenido de este contenedor por:
-            <img src="/assets/img/hero-sara.jpg" alt="Retrato de Sara Murillo, psicóloga sanitaria" class="w-full h-full object-cover rounded-[2rem]" />
-          -->
           <div
-            class="aspect-[3/4] w-full max-w-md mx-auto rounded-[2rem] bg-sand border border-border shadow-warm flex flex-col items-center justify-center text-center gap-3 p-8"
+            class="aspect-[3/4] w-full max-w-md mx-auto rounded-[2rem] bg-sand border border-border shadow-warm overflow-hidden"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.3" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3 4.5h18M3 4.5v15m18-15v15m-18 0h18M4.5 4.5v.008M8.25 9.75h.008v.008H8.25V9.75z" />
-            </svg>
-            <p class="text-sm text-ink-soft">
-              Espacio reservado para fotografía vertical<br />
-              <code class="text-xs">/assets/img/hero-sara.jpg</code>
-            </p>
+            <img
+              src="assets/img/hero-sara.png"
+              alt="Espacio de consulta cálido y acogedor"
+              class="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
     </section>
 
     <!-- ======================= SOBRE MÍ ======================= -->
-    <section id="sobre-mi" class="py-20 sm:py-28 bg-beige">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-5 gap-14 items-start">
+    <section id="sobre-mi" class="py-20 sm:py-28 bg-beige/30">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-5 gap-14 items-center">
         <!-- Texto -->
-        <div class="lg:col-span-3" data-reveal>
+        <div class="lg:col-span-3 lg:order-2" data-reveal>
           <p class="text-sm tracking-widest uppercase text-sage-dark font-medium mb-4">
             Sobre mí
           </p>
           <h2 class="font-serif text-3xl sm:text-4xl text-ink mb-6">
-            Cercanía y rigor profesional en cada sesión
+            Entenderte para poder acompañarte
           </h2>
           <div class="space-y-4 text-ink leading-relaxed">
             <p>
@@ -234,10 +230,10 @@
           </div>
         </div>
 
-        <!-- Logotipo + credenciales -->
-        <div class="lg:col-span-2" data-reveal>
+        <!-- Fotografía -->
+        <div class="lg:col-span-2 lg:order-1" data-reveal>
           <div
-            class="aspect-[3/4] w-full max-w-xs mx-auto lg:mx-0 rounded-3xl bg-white border border-border shadow-warm overflow-hidden mb-6"
+            class="aspect-[3/4] w-full mx-auto rounded-3xl bg-white border border-border shadow-warm overflow-hidden"
           >
             <img
               src="assets/img/sara-murillo.jpg"
@@ -245,31 +241,11 @@
               class="w-full h-full object-cover"
             />
           </div>
-
-          <!-- Nº de colegiada -->
-          <div
-            class="inline-flex items-center gap-3 rounded-xl bg-white border border-border px-4 py-3 mb-4 shadow-sm"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sage-dark shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <span class="text-sm text-ink">
-              Nº Colegiada: <strong>AN-13306</strong> · Colegio Oficial de Psicología de Andalucía Occidental (COPAO)
-            </span>
-          </div>
-
-          <!-- Acreditaciones -->
-          <div class="flex flex-wrap gap-2">
-            <span class="text-xs font-medium text-sage-dark bg-sage-50 border border-sage-100 rounded-full px-3 py-1.5">
-              Máster en Psicología General Sanitaria
-            </span>
-            <span class="text-xs font-medium text-sage-dark bg-sage-50 border border-sage-100 rounded-full px-3 py-1.5">
-              Máster en Psicología Infantojuvenil y Atención Temprana
-            </span>
-            <span class="text-xs font-medium text-sage-dark bg-sage-50 border border-sage-100 rounded-full px-3 py-1.5">
-              Programa Avanzado en Apego y Psicología Perinatal
-            </span>
-          </div>
+          <ul class="mt-4 space-y-2 text-[0.9rem] text-ink-soft/80 text-center lg:text-left">
+            <li>Máster en Psicología General Sanitaria</li>
+            <li>Máster en Psicología Infantojuvenil y Atención Temprana</li>
+            <li>Experto en Salud Mental Reproductiva y Psicología Perinatal</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -402,25 +378,26 @@
     </section>
 
     <!-- ======================= CÓMO TRABAJO ======================= -->
-    <section id="metodo" class="py-20 sm:py-28 bg-beige/60">
+    <section id="metodo" class="py-20 sm:py-28 bg-beige/30">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-2xl mx-auto text-center mb-16" data-reveal>
           <p class="text-sm tracking-widest uppercase text-sage-dark font-medium mb-4">
-            Cómo trabajo
+            Cómo trabajaremos
           </p>
           <h2 class="font-serif text-3xl sm:text-4xl text-ink mb-4">
             Un proceso claro, a tu ritmo
           </h2>
           <p class="text-ink-soft leading-relaxed">
-            Así es, de forma general, el camino que recorremos juntas
-            desde el primer contacto.
+            Cada proceso es diferente, pero hay algo que se mantiene:
+            iremos construyendo juntos/as el camino a seguir,
+            adaptándonos a lo que necesites en cada momento.
           </p>
         </div>
 
-        <div class="relative grid sm:grid-cols-3 gap-10 sm:gap-8">
-          <!-- Línea conectora (solo escritorio) -->
+        <div class="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+          <!-- Línea conectora (solo escritorio grande) -->
           <div
-            class="hidden sm:block absolute top-7 left-[16.6%] right-[16.6%] h-px bg-sage-100"
+            class="hidden lg:block absolute top-7 left-[12.5%] right-[12.5%] h-px bg-sage-100"
             aria-hidden="true"
           ></div>
 
@@ -428,10 +405,15 @@
             <div class="relative z-10 mx-auto w-14 h-14 rounded-full bg-sage-dark text-white font-serif text-xl flex items-center justify-center mb-5">
               01
             </div>
-            <h3 class="font-serif text-lg text-ink mb-2">Primer contacto</h3>
+            <h3 class="font-serif text-lg text-ink mb-1">Primer contacto</h3>
+            <p class="text-sm font-semibold text-sage-dark mb-2">
+              Hablamos antes de empezar
+            </p>
             <p class="text-sm text-ink-soft leading-relaxed max-w-xs mx-auto">
-              Me escribes o me llamas, me cuentas brevemente qué te trae
-              a consulta y resolvemos tus dudas iniciales.
+              En este primer contacto podrás contarme brevemente qué te
+              lleva a consulta y resolver las primeras dudas. También
+              veremos si mi forma de trabajar puede encajar con lo que
+              estás buscando.
             </p>
           </div>
 
@@ -439,10 +421,15 @@
             <div class="relative z-10 mx-auto w-14 h-14 rounded-full bg-sage-dark text-white font-serif text-xl flex items-center justify-center mb-5">
               02
             </div>
-            <h3 class="font-serif text-lg text-ink mb-2">Sesión de valoración</h3>
+            <h3 class="font-serif text-lg text-ink mb-1">Conocernos y comprender qué está pasando</h3>
+            <p class="text-sm font-semibold text-sage-dark mb-2">
+              Primera sesión y valoración
+            </p>
             <p class="text-sm text-ink-soft leading-relaxed max-w-xs mx-auto">
-              Nos conocemos, exploramos tu situación en profundidad y
-              diseñamos juntas un plan de trabajo adaptado a ti.
+              Este primer encuentro será un espacio para conocernos,
+              conocer tu historia y comprender qué estás viviendo.
+              Juntos/as iremos identificando qué necesitas y cuáles son
+              los objetivos a trabajar.
             </p>
           </div>
 
@@ -450,10 +437,32 @@
             <div class="relative z-10 mx-auto w-14 h-14 rounded-full bg-sage-dark text-white font-serif text-xl flex items-center justify-center mb-5">
               03
             </div>
-            <h3 class="font-serif text-lg text-ink mb-2">Acompañamiento</h3>
+            <h3 class="font-serif text-lg text-ink mb-1">Trabajo terapéutico</h3>
+            <p class="text-sm font-semibold text-sage-dark mb-2">
+              Construimos el proceso juntos/as
+            </p>
             <p class="text-sm text-ink-soft leading-relaxed max-w-xs mx-auto">
-              Avanzamos sesión a sesión, revisando el proceso y ajustando
-              el ritmo según tus necesidades y avances.
+              A partir de lo que hemos identificado, comenzaremos a
+              trabajar en aquello que te está generando malestar. Iremos
+              incorporando recursos y herramientas adaptados a ti,
+              revisando el proceso y ajustándolo cuando sea necesario.
+            </p>
+          </div>
+
+          <div class="relative text-center" data-reveal>
+            <div class="relative z-10 mx-auto w-14 h-14 rounded-full bg-sage-dark text-white font-serif text-xl flex items-center justify-center mb-5">
+              04
+            </div>
+            <h3 class="font-serif text-lg text-ink mb-1">Cierre y autonomía</h3>
+            <p class="text-sm font-semibold text-sage-dark mb-2">
+              Nos preparamos para continuar
+            </p>
+            <p class="text-sm text-ink-soft leading-relaxed max-w-xs mx-auto">
+              Cuando los objetivos se hayan alcanzado y sientas que
+              tienes recursos para afrontar lo que venga, iremos
+              preparando el cierre del proceso. La idea es que puedas
+              llevar contigo todo aquello que has aprendido y trabajado
+              en terapia.
             </p>
           </div>
         </div>
@@ -639,10 +648,13 @@
   </main>
 
   <!-- ======================= FOOTER ======================= -->
-  <footer class="bg-ink text-cream/90">
+  <footer class="bg-sage-dark text-cream/90">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid sm:grid-cols-3 gap-10">
       <div>
-        <p class="font-serif text-xl text-white mb-3">Sara Murillo</p>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="assets/img/logo-sara-white.png" alt="" class="w-14 h-14 object-contain shrink-0" aria-hidden="true" />
+          <p class="font-serif text-3xl text-white">Sara Murillo</p>
+        </div>
         <p class="text-sm text-cream/70 leading-relaxed max-w-xs">
           Psicóloga sanitaria. Consulta presencial y online, con un
           acompañamiento cercano, ético y profesional.
@@ -654,7 +666,7 @@
         <ul class="space-y-2 text-sm text-cream/70">
           <li><a href="#sobre-mi" class="hover:text-white transition-colors">Sobre mí</a></li>
           <li><a href="#servicios" class="hover:text-white transition-colors">Servicios</a></li>
-          <li><a href="#metodo" class="hover:text-white transition-colors">Cómo trabajo</a></li>
+          <li><a href="#metodo" class="hover:text-white transition-colors">Cómo trabajaremos</a></li>
           <li><a href="#contacto" class="hover:text-white transition-colors">Contacto</a></li>
         </ul>
       </div>
