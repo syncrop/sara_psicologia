@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sara Murillo · Psicóloga Sanitaria | Consulta presencial y online</title>
+  <title>Sara Murillo · Psicóloga Sanitaria en Sevilla | Consulta presencial y online</title>
   <meta
     name="description"
-    content="Consulta de psicología sanitaria. Acompañamiento cercano y profesional en ansiedad, estrés, autoestima, gestión emocional, duelos y relaciones. Sesiones presenciales y online."
+    content="Psicóloga general sanitaria en Sevilla. Acompañamiento cercano y profesional en ansiedad, autoestima, gestión emocional, duelos, infancia y psicología perinatal. Sesiones presenciales y online."
   />
   <meta name="theme-color" content="#faf8f5" />
 
@@ -14,15 +14,26 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sara Murillo · Psicóloga Sanitaria" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:title" content="Sara Murillo · Psicóloga Sanitaria en Sevilla" />
   <meta
     property="og:description"
-    content="Un espacio seguro para parar, entenderte y cuidarte."
+    content="Un espacio seguro para parar, entenderte y cuidarte. Consulta presencial en Sevilla y online."
   />
-  <meta property="og:image" content="https://saramurillopsicologia.es/assets/img/hero-sara.png" />
+  <meta property="og:image" content="https://saramurillopsicologia.es/assets/img/hero-sara.jpeg" />
   <meta property="og:url" content="https://saramurillopsicologia.es/" />
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sara Murillo · Psicóloga Sanitaria en Sevilla" />
+  <meta
+    name="twitter:description"
+    content="Un espacio seguro para parar, entenderte y cuidarte. Consulta presencial en Sevilla y online."
+  />
+  <meta name="twitter:image" content="https://saramurillopsicologia.es/assets/img/hero-sara.jpeg" />
+
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
 
   <!-- Google Fonts: Lora (titulares) + Plus Jakarta Sans (texto) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,6 +52,46 @@
 
   <!-- Configuración de Tailwind (colores/tipografía) compartida entre páginas -->
   <script src="js/tailwind-config.js"></script>
+
+  <!-- Datos estructurados: ayuda a Google a entender que es un negocio de salud local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Sara Murillo Ridruejo - Psicóloga General Sanitaria",
+    "image": "https://saramurillopsicologia.es/assets/img/sara-murillo.jpeg",
+    "url": "https://saramurillopsicologia.es/",
+    "telephone": "+34626423274",
+    "email": "Saramurillopsicologia@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sevilla",
+      "addressRegion": "Andalucía",
+      "addressCountry": "ES"
+    },
+    "areaServed": "Sevilla",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday"],
+        "opens": "09:00",
+        "closes": "14:00"
+      }
+    ],
+    "employee": {
+      "@type": "Person",
+      "name": "Sara Murillo Ridruejo",
+      "jobTitle": "Psicóloga General Sanitaria",
+      "identifier": "AN-13306"
+    }
+  }
+  </script>
 </head>
 
 <body class="font-sans text-ink bg-cream antialiased">
