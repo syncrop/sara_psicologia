@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://saramurillopsicologia.es/sitemap.xml
+Sitemap: https://saramurillopsicologia.com/sitemap.xml
